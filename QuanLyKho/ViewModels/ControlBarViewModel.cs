@@ -30,11 +30,10 @@ namespace QuanLyKho.ViewModels
             CloseWindowCommand = new RelayCommand<UserControl>(
                 (p) => { return p == null ? false : true; }, 
                 (p) =>{
-                    FrameworkElement window = GetCurrentWindow(p);
-                    var w = window as Window;
-                    if (w != null)
+                    Window window = Window.GetWindow(GetCurrentWindow(p));
+                    if (window != null)
                     {
-                        w.Close();
+                        window.Close();
                     }
                 }
             );
@@ -43,17 +42,16 @@ namespace QuanLyKho.ViewModels
             MaximizeWindowCommand = new RelayCommand<UserControl>(
                 (p) => { return p == null ? false : true; },
                 (p) => {
-                    FrameworkElement window = GetCurrentWindow(p);
-                    var w = window as Window;
-                    if (w != null)
+                    Window window = Window.GetWindow(GetCurrentWindow(p));
+                    if (window != null)
                     {
-                        if(w.WindowState == WindowState.Maximized)
+                        if(window.WindowState != WindowState.Maximized)
                         {
-                            w.WindowState = WindowState.Maximized;
+                            window.WindowState = WindowState.Maximized;
                         }
                         else
                         {
-                            w.WindowState = WindowState.Normal;
+                            window.WindowState = WindowState.Normal;
                         }
                     }
                 }
@@ -63,17 +61,16 @@ namespace QuanLyKho.ViewModels
             MinimizeWindowCommand = new RelayCommand<UserControl>(
                 (p) => { return p == null ? false : true; },
                 (p) => {
-                    FrameworkElement window = GetCurrentWindow(p);
-                    var w = window as Window;
-                    if (w != null)
+                    Window window = Window.GetWindow(GetCurrentWindow(p));
+                    if (window != null)
                     {
-                        if (w.WindowState == WindowState.Minimized)
+                        if (window.WindowState != WindowState.Minimized)
                         {
-                            w.WindowState = WindowState.Minimized;
+                            window.WindowState = WindowState.Minimized;
                         }
                         else
                         {
-                            w.WindowState = WindowState.Normal;
+                            window.WindowState = WindowState.Normal;
                         }
                     }
                 }
@@ -83,11 +80,10 @@ namespace QuanLyKho.ViewModels
             MouseMoveWindowCommand = new RelayCommand<UserControl>(
                 (p) => { return p == null ? false : true; },
                 (p) => {
-                    FrameworkElement window = GetCurrentWindow(p);
-                    var w = window as Window;
-                    if (w != null)
+                    Window window = Window.GetWindow(GetCurrentWindow(p));
+                    if (window != null)
                     {
-                        w.DragMove();
+                        window.DragMove();
                     }
                 }
             );
