@@ -21,18 +21,18 @@ namespace QuanLyKho.ViewModels
 
     public class RelayCommand<T> : ICommand
     {
-        private readonly Action<T> _execute;
         private readonly Predicate<T> _canExecute;
+        private readonly Action<T> _execute;
 
-        public RelayCommand(Action<T> execute, Predicate<T> canExecute)
+        public RelayCommand(Predicate<T> canExecute, Action<T> execute)
         {
             if(execute == null)
             {
                 throw new ArgumentNullException(nameof(execute));
             }
 
-            _execute = execute;
             _canExecute = canExecute;
+            _execute = execute;
         }
 
         public event EventHandler CanExecuteChanged

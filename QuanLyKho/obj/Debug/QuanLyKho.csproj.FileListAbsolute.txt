@@ -23,3 +23,11 @@ D:\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
 D:\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
 D:\QuanLyKho\QuanLyKho\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\QuanLyKho\QuanLyKho\obj\Debug\ResourceXAML\MainResource.baml
+D:\QuanLyKho\QuanLyKho\obj\Debug\LoginWindow.g.cs
+D:\QuanLyKho\QuanLyKho\obj\Debug\LoginWindow.baml
+D:\QuanLyKho\QuanLyKho\obj\Debug\UserControlKteams\ControlBarUC.g.cs
+D:\QuanLyKho\QuanLyKho\obj\Debug\UserControlKteams\ControlBarUC.baml
+D:\QuanLyKho\QuanLyKho\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\QuanLyKho\QuanLyKho\bin\Debug\System.Windows.Interactivity.dll
+D:\QuanLyKho\QuanLyKho\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\QuanLyKho\QuanLyKho\bin\Debug\System.Windows.Interactivity.xml
