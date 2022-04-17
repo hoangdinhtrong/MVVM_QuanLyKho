@@ -21,3 +21,5 @@ D:\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.CoreCompileInputs.cache
 D:\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.CopyComplete
 D:\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
 D:\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
+D:\QuanLyKho\QuanLyKho\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\QuanLyKho\QuanLyKho\obj\Debug\ResourceXAML\MainResource.baml
